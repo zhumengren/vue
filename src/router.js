@@ -1,9 +1,12 @@
 import Vue from "vue";
 import Router from "vue-router";
 import Home from "./views/Home.vue";
-
+// Vue.use()是用来使用插件的，就是传入插件，作用可以自动阻止多次注册相同的插件，
+// 它需要在你调用new Vue()之前完成
 Vue.use(Router);
-
+// router插件，作用是匹配路由，重定向，懒加载，滚动行为，导航守卫等
+// 它会自动识别index.vue文件，不能是其他文件
+// 具体看https://router.vuejs.org/zh/
 export default new Router({
   routes: [
     {
